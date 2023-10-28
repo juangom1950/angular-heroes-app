@@ -17,11 +17,14 @@ const routes: Routes = [
     component: Error404PageComponent,
   },
   {
+    // When people goes to dominio.com/ then it is going back to heroes page
+    // full means it need to be exacttly like this dominio.com/
     path: '',
     redirectTo: 'heroes',
     pathMatch: 'full'
   },
   {
+    // any toher path is going to 404
     path: '**',
     redirectTo: '404',
   }
