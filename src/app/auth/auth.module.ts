@@ -16,6 +16,7 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
   ],
   imports: [
     CommonModule,
+    // Here I am making angular aware of this AuthRoutingModule
     AuthRoutingModule,
   ]
 })

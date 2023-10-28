@@ -17,6 +17,8 @@ const routes: Routes = [
       { path: 'search', component: SearchPageComponent },
       { path: 'edit/:id', component: NewPageComponent },
       { path: 'list', component: ListPageComponent },
+      // To put this in this position is important. If you put it at the top
+      // the other components aren't going to be called
       { path: ':id', component: HeroPageComponent },
       { path: '**', redirectTo: 'list' },
     ]
