@@ -21,6 +21,7 @@ export class HeroesService {
   getHeroById( id: string ): Observable<Hero|undefined> {
     return this.http.get<Hero>(`${ this.baseUrl }/heroes/${ id }`)
       .pipe(
+         // It needs to return an observable
         catchError( error => of(undefined) )
       );
   }
